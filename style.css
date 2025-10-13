@@ -238,6 +238,22 @@ footer img {
   object-fit: cover;
 }
 
+/* ----- Efectos ----- */
+.fade-in-onload {
+  opacity: 0;
+  animation: fadeIn 3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 /* Importar fuentes */
 @font-face {
   font-family: 'BrittanySignature';
@@ -343,6 +359,12 @@ p {
 
   .ceremonia h2 {
     font-size: 2rem;
+  }
+
+  .itinerario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .itinerario .itinerario-movil {
