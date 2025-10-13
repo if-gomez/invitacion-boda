@@ -1,0 +1,416 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background: #fdfcf9;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ----- Encabezado ----- */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-flores-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20rem;
+}
+
+.hero-flores-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 18rem;
+}
+
+.hero-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-logo img {
+  width: 20rem;
+  max-width: 60vw;
+}
+
+/* ----- Secciones ----- */
+section {
+  padding: 2rem 1rem;
+}
+
+.icon {
+  width: 115px;
+}
+
+.btn {
+  background: #6a8562;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  border: 0;
+  font-family: 'FiraSansThin';
+  width: 10rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
+.gray-section {
+  background: #6a8562;
+}
+
+.btn:hover {
+  background: #556b4e;
+}
+
+.itinerario .itinerario-web {
+  width: 65rem;
+}
+
+.itinerario .itinerario-movil {
+  display: none;
+}
+
+.confirmar {
+  background-image: url('./assets/img/confirmar-asis-fondo.png');
+  background-size: cover;
+}
+
+.regalos p {
+  margin: 1rem;
+}
+
+.regalos .icon {
+  width: 110px;
+}
+
+.regalos .btn {
+  background: #fff;
+  color: #000;
+}
+
+.dresscode h3 {
+  margin: 0px;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.dresscode p {
+  margin: 0px;
+  color: #000;
+}
+
+.dresscode .icon {
+  width: 80px;
+}
+
+.confirmar h3 {
+  font-weight: 100;
+  font-size: 2rem;
+  margin: 0;
+  color: #6a8562;
+}
+
+.confirmar p {
+  margin: 1rem;
+  color: #000;
+}
+
+.fotos img {
+  width: 110px;
+}
+
+.fotos h3 {
+  margin: 0;
+  font-weight: 100;
+  font-size: 2rem;
+  color: #6a8562;
+}
+
+.fotos p {
+  margin: 1rem;
+  color: #000;
+}
+
+
+.mensaje-final p {
+  color: #000;
+}
+
+/* ----- Contador ----- */
+.contador {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 2rem 1rem;
+  font-family: 'JustTheWayYouAre';
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#countdown div {
+  text-align: center;
+  min-width: 50px;
+}
+
+#countdown .number {
+  font-size: 3rem;
+}
+
+#countdown div .label {
+  font-size: 1.2rem;
+}
+
+/* ----- Pop-up ----- */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: #6a8562;
+  color: white;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.popup-content p {
+  color: #fff;
+  margin: 0;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ----- Footer ----- */
+
+footer {
+  width: 100%;
+  height: 8rem;
+}
+
+footer img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Importar fuentes */
+@font-face {
+  font-family: 'BrittanySignature';
+  src: url('assets/fonts/BrittanySignature.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraSansLight';
+  src: url('assets/fonts/FiraSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraSansThin';
+  src: url('assets/fonts/FiraSans-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JustTheWayYouAre';
+  src: url('assets/fonts/JustTheWayYouAre.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Fuentes */
+.ceremonia h2 {
+  font-family: 'BrittanySignature', cursive;
+  font-size: 2.5rem;
+  color: #6a8562;
+  font-weight: 100;
+}
+
+.regalos p {
+  color: #fff;
+}
+
+h2 {
+  margin: 10px;
+}
+
+h3 {
+  font-family: 'FiraSansLight';
+}
+
+p {
+  font-family: 'FiraSansThin';
+  color: #6a8562;
+  font-size: 1.4rem;
+  line-height: normal;
+}
+
+
+
+/* ================== Responsive ================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-logo img {
+    width: 20rem;
+  }
+
+  .contador {
+    font-size: 1.2rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .hero {
+    height: 100vh;
+  }
+
+  .hero-logo img {
+    width: 18rem;
+    max-width: 70vw;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .icon {
+    width: 110px;
+  }
+
+  .btn {
+    font-size: 1.3rem;
+    padding: 0.7rem 1.3rem;
+  }
+
+  .ceremonia h2 {
+    font-size: 2rem;
+  }
+
+  .itinerario .itinerario-movil {
+    display: block;
+    width: 22rem;
+  }
+
+  .itinerario .itinerario-web {
+    display: none;
+  }
+
+  .dresscode h3 {
+    font-size: 1.6rem;
+  }
+
+  .confirmar h3 {
+    font-size: 1.8rem;
+  }
+
+  .fotos h3 {
+    font-size: 1.8rem;
+  }
+
+  .regalos p {
+    font-size: 1.3rem;
+  }
+
+  .dresscode p {
+    font-size: 1.3rem;
+  }
+
+  .fotos p {
+    font-size: 1.3rem;
+  }
+
+  .contador {
+    display: flex;
+    justify-content: center;
+  }
+
+  #countdown {
+    flex-wrap: nowrap;
+    width: 85%;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  #countdown div {
+    width: 100%;
+    text-align: center;
+    min-width: auto;
+  }
+
+  #countdown .number {
+    font-size: 3rem;
+  }
+
+  .popup-content {
+    margin: 1rem;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  footer img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
