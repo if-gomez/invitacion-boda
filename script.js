@@ -20,8 +20,7 @@ const countdown = () => {
   `;
 };
 
-countdown();
-// setInterval(countdown, 1000);
+setInterval(countdown, 1000);
 
 // ---- Pop-up ----
 const popup = document.getElementById("popup");
