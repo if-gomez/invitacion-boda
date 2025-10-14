@@ -50,6 +50,9 @@ body {
 /* ----- Secciones ----- */
 section {
   padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .icon {
@@ -62,11 +65,11 @@ section {
   text-decoration: none;
   border-radius: 50px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: background 0.3s ease;
   border: 0;
   font-family: 'FiraSansThin';
-  width: 10rem;
+  width: 12rem;
   height: 2rem;
   display: flex;
   flex-direction: row;
@@ -109,6 +112,11 @@ section {
   background: #fff;
   color: #000;
 }
+
+.regalos .btn:hover {
+  background: #F2ECE6;
+}
+
 
 .dresscode h3 {
   margin: 0px;
@@ -308,6 +316,7 @@ p {
   color: #6a8562;
   font-size: 1.4rem;
   line-height: normal;
+  width: 40%;
 }
 
 
@@ -346,6 +355,13 @@ p {
 
   section {
     padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p {
+    width: 100%;
   }
 
   .icon {
@@ -355,6 +371,7 @@ p {
   .btn {
     font-size: 1.3rem;
     padding: 0.7rem 1.3rem;
+    width: 10rem;
   }
 
   .ceremonia h2 {
@@ -389,15 +406,19 @@ p {
   }
 
   .regalos p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .dresscode p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+
+  .confirmar p {
+    font-size: 1.2rem;
   }
 
   .fotos p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .contador {
@@ -419,7 +440,15 @@ p {
   }
 
   #countdown .number {
-    font-size: 3rem;
+    font-size: 2.3rem;
+  }
+
+  #countdown .label {
+    font-size: 1rem;
+  }
+
+  #countdown .segundos {
+    display: none;
   }
 
   .popup-content {

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invitación - Ivan & Caro</title>
+    <link rel="preload" as="image" href="assets/img/header-fondo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,12 +13,12 @@
 
     <!-- Encabezado -->
     <header class="hero">
-        <img src="assets/img/header-flores-top.png" alt="Flores encabezado" class="hero-flores-top">
-        <img src="assets/img/header-fondo.png" alt="Fondo encabezado" class="hero-bg">
-        <img src="assets/img/header-flores-bottom.png" alt="Flores encabezado" class="hero-flores-bottom">
-        <div class="hero-logo fade-in-onload">
-            <img src="assets/svg/logo.svg" alt="Logo Ivan y Caro">
-        </div>
+    <img src="assets/img/header-flores-top.png" alt="Flores encabezado" class="hero-flores-top" fetchpriority="high">
+    <img src="assets/img/header-fondo.png" alt="Fondo encabezado" class="hero-bg" fetchpriority="high">
+    <img src="assets/img/header-flores-bottom.png" alt="Flores encabezado" class="hero-flores-bottom" fetchpriority="high">
+    <div class="hero-logo fade-in-onload">
+        <img src="assets/svg/logo.svg" alt="Logo Ivan y Caro">
+    </div>
     </header>
 
     <!-- Detalles de ceremonia -->
@@ -44,8 +45,7 @@
     <!-- Regalos -->
     <section class="gray-section regalos">
         <img src="assets/svg/regalos-cropped.svg" alt="Regalos" class="icon">
-        <p>Para nosotros tu presencia es lo mas importante, <br>
-            pero si deseás realizarnos un regalo, podés colaborar con nuestra Luna de Miel...</p>
+        <p>Para nosotros tu presencia es lo mas importante, pero si deseás realizarnos un regalo, podés colaborar con nuestra Luna de Miel...</p>
         <a id="btn-datos" class="btn">NUESTROS DATOS</a>
     </section>
 
@@ -59,8 +59,7 @@
     <!-- Confirmar asistencia -->
     <section class="confirmar">
         <h3>CONFIRMÁ TU ASISTENCIA</h3>
-        <p>Nos encantaría que seas parte de este <br>
-        gran día ¡Confirmanos tu asistencia!</p>
+        <p>Nos encantaría que seas parte de este gran día ¡Confirmanos tu asistencia!</p>
         <a href="https://forms.gle/DwsAirgD9wzQuJ3i7" target="_blank" class="btn">CONFIRMAR</a>
     </section>
 
@@ -68,8 +67,7 @@
     <section class="fotos">
         <img src="assets/svg/fotos-cropped.svg" alt="Fotos" class="icon">
         <h3>QUEREMOS VER TUS FOTOS</h3>
-        <p>Creamos un álbum para que todos capturen los <br>
-            mejores momentos de la fiesta y los compartamos juntos.</p>
+        <p>Creamos un álbum para que todos capturen los mejores momentos de la fiesta y los compartamos juntos.</p>
         <a href="https://photos.app.goo.gl/vkWCZAE4icyRC2w88" target="_blank" class="btn">VER ÁLBUM</a>
     </section>
     <footer>

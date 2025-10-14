@@ -15,12 +15,13 @@ const countdown = () => {
     <div><span class="number">${hours}</span><br><span class="label">HORAS</span></div>
     <div><span class="number">:</span></div>
     <div><span class="number">${minutes}</span><br><span class="label">MINUTOS</span></div>
-    <div><span class="number">:</span></div>
-    <div><span class="number">${seconds}</span><br><span class="label">SEGUNDOS</span></div>
+    <div class="segundos"><span class="number">:</span></div>
+    <div class="segundos"><span class="number">${seconds}</span><br><span class="label">SEGUNDOS</span></div>
   `;
 };
 
-setInterval(countdown, 1000);
+countdown();
+// setInterval(countdown, 1000);
 
 // ---- Pop-up ----
 const popup = document.getElementById("popup");
