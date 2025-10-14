@@ -55,6 +55,10 @@ section {
   align-items: center;
 }
 
+.salto-movil {
+  display: none;
+}
+
 .icon {
   width: 115px;
 }
@@ -88,7 +92,7 @@ section {
 }
 
 .itinerario .itinerario-web {
-  width: 65rem;
+  width: 75rem;
 }
 
 .itinerario .itinerario-movil {
@@ -337,12 +341,25 @@ p {
   .contador {
     font-size: 1.2rem;
   }
+
+  .itinerario .itinerario-movil {
+    display: block;
+    width: 22rem;
+  }
+
+  .itinerario .itinerario-web {
+    display: none;
+  }
 }
 
 /* Móviles */
 @media (max-width: 600px) {
   h3 {
     font-size: 1.8rem;
+  }
+
+  .salto-movil {
+    display: block;
   }
 
   .hero {
