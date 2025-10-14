@@ -222,6 +222,7 @@ section {
 .popup-content p {
   color: #fff;
   margin: 0;
+  width: 100%;
 }
 
 .close {
